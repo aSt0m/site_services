@@ -344,8 +344,20 @@ header .container {
 }
 .brand-ideas{
 	color:#fff;
-	font-size:1.4rem;
 	padding-left:1rem;
+	font-size:1.4rem;
+}
+.i, .w{
+	font-size:2rem;
+	margin: 0 .2rem;
+	display: inline-block;
+	color:red;
+}
+.brand-h2{
+	font-size:1.4rem;
+	color:#fff;
+	display: inline-block;
+	padding-top: .6rem;
 }
 .brand-ideas:hover{
 	color:red;

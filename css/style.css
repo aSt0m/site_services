@@ -2644,6 +2644,14 @@ body.no-scroll {
 
 
 /* RESPONSIVE MOBILE MENU */
+.close-slide{
+	color:rgb(240, 10, 10);
+	position:absolute;
+	left:2rem;
+	top:2rem;
+	font-size:1.4rem;
+	cursor:pointer;
+}
 
 .responsive-mobile-menu {
 	position: fixed;

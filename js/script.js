@@ -12,7 +12,7 @@ $(window).on("load", function() {
       return false;
     });
 
-    $("html").on("click", function() {
+    $(".close-slide").on("click", function() {
       $(".responsive-mobile-menu").removeClass("show");
     });
     $(".menu-btn, .responsive-mobile-menu").on("click", function(e) {

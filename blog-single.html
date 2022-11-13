@@ -55,7 +55,7 @@
 					<nav>
 						<ul>
 							<li><a href="services.html" title="">Services</a></li>
-							<li><a href="cases.html" title="">Cases</a></li>
+							<li><a href="case-work.html" title="">Cases</a></li>
 							<li><a href="contact.html" title="">Contact us</a></li>
 						</ul>
 					</nav><!--navigation end-->
@@ -244,34 +244,40 @@
 									<h1>Leave a reply</h1>
 									<p>Leave your comment below.</p>
 								</div><!--main-banner-text end-->
-								<form class="comment-form" id="contact-form" method="post" action="#">
+								<form id="form">
 									<div class="response"></div>
 									<div class="row">
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="form-group">
-												<input type="text" name="name" class="form-control name" placeholder="Name">
-											</div><!--form-group end-->
+										<div class="col-lg-6">
+											<div class="input-field">
+												<input type="text" name="name" id="name" class="name" placeholder="Nombre">
+											</div>
+											
 										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="form-group">
-												<input type="text" name="email" class="form-control email" placeholder="Email">
-											</div><!--form-group end-->
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-12">
-											<div class="form-group">
-												<input type="text" name="company" class="form-control" placeholder="Company">
-											</div><!--form-group end-->
+										<div class="col-lg-6">
+											<div class="input-field">
+												<input type="email" name="email" id="email" class="email" placeholder="Correo">
+											</div>
+											
 										</div>
 										<div class="col-lg-12">
-											<div class="form-group">
-												<textarea name="comment" placeholder="Your comment" class="form-control"></textarea>
-											</div><!--form-group end-->
+											<div class="input-field">
+												<textarea type="text" name="message" placeholder="Mensaje"></textarea>
+											</div>
+										
 										</div>
 										<div class="col-lg-12">
-											<button type="button" class="btn-default" id="submit">Post comment</button>
+											<div class="input-field m-0">
+												<input type="submit" class="btn-default" id="button" value="Enviar">
+											</div>
 										</div>
 									</div>
-								</form>
+								</form> 
+								<script type="text/javascript"
+								src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	
+							<script type="text/javascript">
+								emailjs.init('Mc-BxCmp6KzqG74cD')
+							</script>
 							</div><!--post-comments-section end-->
 						</div>
 						<div class="col-lg-3">

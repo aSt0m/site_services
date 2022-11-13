@@ -14,7 +14,15 @@
 	<link rel="stylesheet" type="text/css" href="css/color.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SQ6CZ0X19S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-SQ6CZ0X19S');
+</script>
 
 <body>
 
@@ -56,13 +64,13 @@
 					<nav>
 						<ul>
 							<li><a href="services.html" title="">Servicios</a></li>
-							<li><a href="cases.html" title="">Portafolio</a></li>
+							<li><a href="case-fidelity.html" title="">Portafolio</a></li>
 							<li><a href="contact.html" title="">Contacto</a></li>
 						</ul>
 					</nav><!--navigation end-->
 					<div class="right-side-hd">
 						<span>+52 5534597704</span>
-						<a href="#" title="" class="btn-default">Cotiza tu idea</a>
+						<a href="contact.html" title="" class="btn-default">Cotiza tu idea</a>
 					</div>
 					<a href="#" title="" class="menu-btn">
 						<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,8 +106,8 @@
 										<img src="images/c-icon1.svg" alt="">
 									</div>
 									<div class="contact-nfo">
-										<h3>Address:</h3>
-										<p>27 Division St, New York, NY 10002, USA</p>
+										<h3>Dirección:</h3>
+										<p>Obrero Mundial 626 Atenor Salas Del. Benito Juarez</p>
 									</div>
 								</div><!--contact-lzt end-->
 								<div class="contact-lzt">
@@ -107,9 +115,9 @@
 										<img src="images/c-icon2.svg" alt="">
 									</div>
 									<div class="contact-nfo">
-										<h3>Hit us up:</h3>
-										<span>+1 845 631 78 49</span>
-										<span>info@sitename.com</span>
+										<h3>Contactanos</h3>
+										<span>+52 5534597704</span>
+										<span>ideasweb.desarrollo@gmail.com</span>
 									</div>
 								</div><!--contact-lzt end-->
 								<div class="contact-lzt">
@@ -117,8 +125,8 @@
 										<img src="images/c-icon3.svg" alt="">
 									</div>
 									<div class="contact-nfo">
-										<h3>Working Schedule:</h3>
-										<p>Mon - Fri: 9 am - 6 pm Sat, Sun: Holiday</p>
+										<h3>Horarios:</h3>
+										<p>Lun - Vie: 9 am - 6 pm Sab: 2pm, Dom: Descanso</p>
 									</div>
 								</div><!--contact-lzt end-->
 							</div><!--contact-list end-->
@@ -126,36 +134,45 @@
 						<div class="col-lg-6">
 							<div class="contact-section-page">
 								<div class="main-banner-text title-hd wow fadeInUp" data-wow-delay="300ms">
-									<span>contact us</span>
-									<h1>Send a message <span></span></h1>
+									<span>contacto</span>
+									<h1>Envia mensaje <span></span></h1>
 									<p class="bdy">We always try to implement our creative ideas at the highest level. Tell us about your project and we will make it work. </p>
 								</div><!--title-hd end-->
 								<div class="contact-form wow fadeInUp" data-wow-delay="300ms">
-									<form method="post" action="#" id="contact-form">
-	                                    <div class="response"></div>
+									<form id="form">
+										<div class="response"></div>
 										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="col-lg-6">
 												<div class="input-field">
-													<input type="text" name="name" class="name" placeholder="Name">
-												</div><!--input-field end-->
+													<input type="text" name="name" id="name" class="name" placeholder="Nombre">
+												</div>
+												
 											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="col-lg-6">
 												<div class="input-field">
-													<input type="text" name="email" class="email" placeholder="Email">
-												</div><!--input-field end-->
+													<input type="email" name="email" id="email" class="email" placeholder="Correo">
+												</div>
+												
 											</div>
 											<div class="col-lg-12">
 												<div class="input-field">
-													<textarea name="message" placeholder="Message"></textarea>
-												</div><!--input-field end-->
+													<textarea type="text" name="message" placeholder="Mensaje"></textarea>
+												</div>
+											
 											</div>
 											<div class="col-lg-12">
 												<div class="input-field m-0">
-													<button type="button" class="btn-default" id="submit">Send message</button>
+													<input type="submit" class="btn-default" id="button" value="Enviar">
 												</div>
 											</div>
 										</div>
-									</form>
+									</form> 
+									<script type="text/javascript"
+									src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		
+								<script type="text/javascript">
+									emailjs.init('Mc-BxCmp6KzqG74cD')
+								</script>
 								</div><!--contact-form end-->
 							</div><!--consulation-section end-->
 						</div>

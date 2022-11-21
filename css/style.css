@@ -2665,7 +2665,7 @@ body.no-scroll {
 	height: 100%;
 	background: #000;
 	overflow-y: auto;
-	z-index: 99;
+	z-index: 100;
 	padding: 80px 50px;
 	opacity: 0;
 	visibility: hidden;
